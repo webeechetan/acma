@@ -1,0 +1,38 @@
+
+<FilesMatch "\.pdf$">
+ForceType applicaton/octet-stream
+Header set Content-Disposition attachment
+</FilesMatch>
+RewriteCond %{HTTPS} off
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} ^acma.in [NC]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^(.*)$ https://www.acma.in/$1 [L,R=301,NC]
+#RewriteCond %{HTTP_HOST} ^www.acma.in [NC]
+#RewriteRule ^(.*)$ https://acma.in/$1 [L,R=301,NC]
+Redirect 301 /contact-us.php https://www.acma.in/contact.php
+Redirect 301 /about-acma.php https://www.acma.in/about-us.php
+Redirect 301 /industry-statistics.php https://www.acma.in/auto-component.php
+Redirect 301 /annual-reports.php https://www.acma.in/annual-report.php
+Redirect 301 /press.php https://www.acma.in/press-release.php
+Redirect 301 /dg-acma.php https://www.acma.in/index.php
+Redirect 301 /ACMA-Members.php https://www.acma.in/benefits-of-joining.php
+Redirect 301 /president-acma.php https://www.acma.in/office-bearers.php
+
+Redirect 301 /govt-center-state-notifications https://www.acma.in/govt-center-state-notifications.php
+Redirect 301 /oem-notifications-covid19 https://www.acma.in/oem-notifications-covid19.php
+Redirect 301 https://www.acma.in https://www.abc.in
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php74” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
+</IfModule>
+

@@ -1,0 +1,20 @@
+[15-Apr-2021 17:32:12 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Models\MetaDetails' not found in /home2/acmaig3n/public_html/includes/meta.php:6
+Stack trace:
+#0 {main}
+  thrown in /home2/acmaig3n/public_html/includes/meta.php on line 6
+[09-Jun-2021 22:43:05 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Models\MetaDetails' not found in /home2/acmaig3n/public_html/includes/meta.php:6
+Stack trace:
+#0 {main}
+  thrown in /home2/acmaig3n/public_html/includes/meta.php on line 6
+[11-Sep-2021 19:58:34 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Models\MetaDetails' not found in /home2/acmaig3n/public_html/includes/meta.php:6
+Stack trace:
+#0 {main}
+  thrown in /home2/acmaig3n/public_html/includes/meta.php on line 6
+[29-Oct-2021 08:52:47 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Models\MetaDetails' not found in /home2/acmaig3n/public_html/includes/meta.php:6
+Stack trace:
+#0 {main}
+  thrown in /home2/acmaig3n/public_html/includes/meta.php on line 6
+[23-Feb-2022 16:40:30 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Models\MetaDetails' not found in /home2/acmaig3n/public_html/includes/meta.php:6
+Stack trace:
+#0 {main}
+  thrown in /home2/acmaig3n/public_html/includes/meta.php on line 6

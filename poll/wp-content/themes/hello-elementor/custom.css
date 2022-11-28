@@ -1,0 +1,294 @@
+/* ----- Poll Chart ----- */
+
+.poll-main-title{
+
+    padding-top: 30px;
+
+    padding-bottom: 40px;
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+    max-width: 450px;
+
+    margin: auto;
+
+}
+
+
+
+header.site-header{
+
+    max-width: 100%;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+
+
+
+.weblator-poll-container{
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: flex-start;
+
+    grid-gap: 15px;
+
+    background-color: #f9f9f9;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+}
+
+
+
+.weblator-poll-container .panel .panel-title{
+
+    font-size: 18px;
+
+    text-transform: capitalize;
+
+    line-height: 26px;
+
+    letter-spacing: 0.5px;
+
+}
+
+
+
+.weblator-poll-container .panel.panel-default > .panel-heading{
+
+    background-color: #eee;
+
+    color: #252525;
+
+    padding-top: 15px;
+
+    padding-bottom: 15px;
+
+    border-radius: 5px 5px 0 0;
+
+}
+
+
+
+
+
+div.weblator-poll-container .panel-footer{
+
+    background-color: #ddd;
+
+    padding-bottom: 15px;
+
+    padding-top: 15px;
+
+    border-radius: 0 0 5px 5px;
+
+}
+
+
+
+div.weblator-poll-container .btn-default{
+
+    border-radius: 25px;
+
+    padding: 5px 25px;
+
+    background: #fff;
+
+    color: #000;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+
+
+div.weblator-poll-container ul li{
+
+    display: grid;
+
+    grid-template-columns: 25px auto;
+
+}
+
+
+
+div.weblator-poll-container .weblator-poll-vote ul li:not(:last-child){
+
+    margin-bottom: 10px;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #eee;
+
+}
+
+
+
+div.weblator-poll-container ul li label{
+
+    letter-spacing: 0.5px;
+
+}
+
+
+
+.weblator-poll-container ul.weblator-poll-legend{
+
+    margin-top: 15px;
+
+}
+
+
+
+div.weblator-poll-container ul.weblator-poll-legend.tm > li, .weblator-poll-container ul.weblator-poll-legend.bm > li{
+
+    display: inline-flex !important;
+
+    align-items: center;
+
+}
+
+
+
+.weblator-poll-container .weblator-poll-legend .weblator-poll-legend-title .weblator-poll-legend-box{
+
+    border-radius: 50% !important;
+
+}
+
+
+
+.weblator-poll-container ul.weblator-poll-legend li .weblator-label{
+
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+
+    color: #000 !important;
+
+}
+
+.site-header{
+
+    justify-content: center;
+
+}
+
+
+
+div.weblator-poll-container .panel-body{
+
+    padding-top: 25px;
+
+    padding-bottom: 25px;
+
+}
+
+
+
+/* ----- Form ----- */
+
+body div.wpcf7{
+
+    background-color: #f9f9f9;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    margin-bottom: 50px;
+
+}
+
+
+
+body div.wpcf7 form{
+
+    max-width: 425px;
+
+    margin: auto;
+
+    background: #eee;
+
+    padding: 30px 25px 25px;
+
+    display: grid;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+}
+
+
+
+body div.wpcf7 form input{
+
+    margin-top: 5px;
+
+    border-color: #ddd;
+
+}
+
+
+
+body div.wpcf7 form input[type="submit"]{
+
+    border-color: #ddd;
+
+    color: #252525;
+
+    background-color: #fff;
+
+    border-radius: 25px;
+
+    padding: 7px 30px;
+
+}
+
+
+
+body div.wpcf7 form input[type="submit"]:hover{
+
+    background-color: #ddd;
+
+    color: #252525;
+
+}
+
+.result-box .weblator-poll-container{
+    grid-template-columns: auto;
+}
+
+.result-box .weblator-poll-container ul.weblator-poll-legend li .weblator-label{
+    font-size: 12px !important;
+}
+
+.result-box .weblator-poll-container .weblator-poll-legend .weblator-poll-legend-title .weblator-poll-legend-box{
+    width: 10px !important;
+    height: 10px !important;
+}
+
+/* ----- Responsive ----- */
+
+
+
+@media (max-width: 991px){
+
+    .weblator-poll-container{
+
+        grid-template-columns: auto;
+
+    }
+
+}

@@ -1,0 +1,3 @@
+RewriteEngine On
+ErrorDocument 404 https://www.acma.in
+RedirectPermanent https://www.acma.in/uploads/otherdocmanager/ACMA_AGM_2022_Thank_You_Sponsor.PDF https://www.acma.in

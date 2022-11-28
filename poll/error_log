@@ -1,0 +1,3 @@
+[20-Apr-2021 20:20:01 UTC] PHP Warning:  trim() expects parameter 1 to be string, array given in /home2/acmaig3n/public_html/poll/wp-content/plugins/contact-form-7/includes/functions.php on line 132
+[20-Apr-2021 20:20:05 UTC] PHP Warning:  trim() expects parameter 1 to be string, array given in /home2/acmaig3n/public_html/poll/wp-content/plugins/contact-form-7/includes/functions.php on line 132
+[20-Apr-2021 20:23:34 UTC] PHP Warning:  gethostbyname(): Host name is too long, the limit is 255 characters in /home2/acmaig3n/public_html/poll/wp-includes/http.php on line 556
